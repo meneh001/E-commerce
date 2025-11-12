@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantabolous E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Fantabolous</h1>
+    <div class="header-buttons">
+  <button onclick="toggleNotifications()" id="notifyBtn">
+    🔔 <span id="notifyCount" class="badge hidden">0</span>
+  </button>
+  <button onclick="toggleDarkMode()">🌓</button>
+</div>
+
+  </header>
+
+  <div id="cookieBanner">
+    Fantabolous uses cookies to improve your experience.
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+
+  <main>
+    <section id="auth" class="panel">
+      <h2>Login or Create Account</h2>
+      <input type="text" id="username" placeholder="Your Name" />
+      <select id="role">
+        <option value="">Select Role</option>
+        <option value="buyer">Buyer</option>
+        <option value="seller">Seller</option>
+      </select>
+      <button onclick="signIn()">Enter</button>
+    </section>
+
+    <section id="buyerView" class="panel hidden">
+      <h2>Browse Products</h2>
+      <input type="text" id="searchInput" placeholder="Search..." oninput="renderProducts()" />
+      <div id="productList"></div>
+      <button onclick="switchToSeller()">Switch to Seller</button>
+      <button onclick="logout()">Logout</button>
+    </section>
+
+    <section id="sellerView" class="panel hidden">
+      <h2>Post a Product</h2>
+      <input type="text" id="productName" placeholder="Product Name" />
+      <textarea id="productDesc" placeholder="Description"></textarea>
+      <input type="number" id="price" placeholder="Price (SLE)" />
+      <input type="text" id="contactPhone" placeholder="Phone/WhatsApp" />
+      <input type="text" id="contactIG" placeholder="Instagram" />
+      <input type="email" id="contactEmail" placeholder="Email" />
+      <input type="file" id="media" accept="image/*,video/*" />
+      <button onclick="postProduct()">Post Product</button>
+      <div id="sellerProducts"></div>
+      <button onclick="switchToBuyer()">Switch to Buyer</button>
+      <button onclick="logout()">Logout</button>
+    </section>
+
+    <section id="buyerNotifications" class="panel hidden"></section>
+    <section id="sellerNotifications" class="panel hidden"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fantabolous</p>
+    <nav>
+      <a href="#" onclick="showModal('terms')">Terms</a>
+      <a href="#" onclick="showModal('privacy')">Privacy</a>
+      <a href="#" onclick="showModal('refund')">Refund</a>
+      <a href="#" onclick="showModal('shipping')">Shipping</a>
+      <a href="#" onclick="showModal('help')">Help</a>
+    </nav>
+  </footer>
+
+  <div id="modalOverlay" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody" class="modal-scroll"></div>
+      <button onclick="hideModal()" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
