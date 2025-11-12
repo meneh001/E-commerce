@@ -6,9 +6,9 @@ const modalContent = {
     title: "Terms & Conditions",
     body: `
       <ul>
-        <li>Use Fantabolous legally and respectfully.</li>
+        <li>Use Meneh's Online Trading legally and respectfully.</li>
         <li>You are responsible for your account and actions.</li>
-        <li>Fantabolous is a marketplace, not a seller.</li>
+        <li>Meneh's Online Trading is a marketplace, not a seller.</li>
         <li>We may suspend accounts that violate policies.</li>
         <li>We help resolve disputes but are not liable for transactions.</li>
       </ul>
@@ -32,7 +32,7 @@ const modalContent = {
         <li>Refunds are handled by sellers directly.</li>
         <li>Contact the seller within 7 days of delivery.</li>
         <li>Digital products are non-refundable unless stated.</li>
-        <li>Fantabolous does not issue refunds.</li>
+        <li>Meneh's Online Trading does not issue refunds.</li>
       </ul>
     `
   },
@@ -42,7 +42,7 @@ const modalContent = {
       <ul>
         <li>Sellers set shipping fees and timelines.</li>
         <li>Buyers must confirm shipping before purchase.</li>
-        <li>Fantabolous does not handle delivery.</li>
+        <li>Meneh's Online Trading does not handle delivery.</li>
       </ul>
     `
   },
@@ -51,7 +51,7 @@ const modalContent = {
     body: `
       <ul>
         <li><strong>FAQs:</strong> Common questions and answers.</li>
-        <li><strong>Contact Us:</strong> Email support@fantabolous.com</li>
+        <li><strong>Contact Us:</strong> Email abumenehdumbuya24434@gmail.com</li>
         <li><strong>Disputes:</strong> We help mediate buyer-seller issues.</li>
         <li><strong>Tech Support:</strong> For login or dashboard issues.</li>
       </ul>
@@ -309,3 +309,4 @@ window.onload = function () {
     }
   }
 };
+
